@@ -2,10 +2,10 @@
 
 class Watermark : public Module {
 public:
-	Watermark(std::string cat) : Module(cat, "Watermark", "Display watermark in bottom corner of screen", 0x07, true) {};
+	Watermark(std::string cat) : Module(cat, "Watermark", "Displays Internal watermark", 0x07, true) {};
 
 	void OnFrameRender(RenderUtils* ctx) override {
-		auto vText1 = TextHolder("Trero Internal"); //"Trero Internal"
+		auto vText1 = TextHolder("https://github.com/smochort11/MyInternalMinecraftClient"); //"Trero Internal"
 
 		//RGB
 		_RGB rainbow;

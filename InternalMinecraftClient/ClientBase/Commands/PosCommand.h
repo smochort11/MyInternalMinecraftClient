@@ -2,7 +2,7 @@
 
 class PosCommand : public Command {
 public:
-	PosCommand(std::string name) : Command(name, "Tells Ur Pos") {};
+	PosCommand(std::string name) : Command(name, "X__ Y__ Z__") {};
 
 	void Execute(std::vector<std::string> args) {
         auto player = clientInst->getLocalPlayer();

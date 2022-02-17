@@ -2,7 +2,7 @@
 
 class Tracers : public Module {
 public:
-	Tracers(std::string cat) : Module(cat, "RenderHome", "Render a message where you enabled this module", 0x07) {};
+	Tracers(std::string cat) : Module(cat, "RenderHome", "Lines to indicate where mobs and players are", 0x07) {};
 	Vector3 savedPos = Vector3();
 
 	void OnEnable(ClientInstance* ci, Actor* lp) override {

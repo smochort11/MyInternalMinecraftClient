@@ -4,7 +4,7 @@ bool RightBar = false; // set this to true for a cool Right bar
 
 class ArrayList : public Module {
 public:
-    ArrayList(std::string cat) : Module(cat, "ArrayList", "Display list of modules that are enabled", 0x07, true) {};
+    ArrayList(std::string cat) : Module(cat, "ArrayList", "Everyone can see what you have enabled.", 0x07, true) {};
 
     // Length compare for module
     struct moduleLengthCompare {

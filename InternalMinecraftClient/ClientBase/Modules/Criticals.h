@@ -2,7 +2,7 @@
 
 class Criticals : public Module {
 public:
-	Criticals(std::string cat) : Module(cat, "Criticals", "Hit all criticals", 0x00) {}
+	Criticals(std::string cat) : Module(cat, "Criticals", "All of your hits are critical hits.", 0x00) {}
 	void* targetAddress;
 	void OnEnable(ClientInstance* a1, Actor* a2) override {
 		if (targetAddress == nullptr)

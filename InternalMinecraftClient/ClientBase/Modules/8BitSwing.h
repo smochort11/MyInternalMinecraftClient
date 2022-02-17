@@ -2,7 +2,7 @@
 
 class EightBitSwing : public Module {
 public:
-	EightBitSwing(std::string cat) : Module(cat, "8BitSwing", "Looks like a swing animation from an 8 bit game", 0x07) {}
+	EightBitSwing(std::string cat) : Module(cat, "8BitSwing", "Changes swing animation to look like an 8bit videogame swing animation.", 0x07) {}
 	void* targetAddress;
 
 	void OnEnable(ClientInstance* a1, Actor* a2) override {

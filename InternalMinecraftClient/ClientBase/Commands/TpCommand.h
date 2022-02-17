@@ -2,7 +2,7 @@
 
 class TpCommand : public Command {
 public:
-	TpCommand(std::string name) : Command(name, "Tp's you to selected coordinates") {};
+	TpCommand(std::string name) : Command(name, "Teleport to a specified XYZ co-ordinate") {};
 
 	void Execute(std::vector<std::string> args) override {
 		if (!empty(args[1])) {

@@ -2,7 +2,7 @@
 
 class NoSlow : public Module {
 public:
-	NoSlow(std::string cat) : Module(cat, "NoSlow", "no more slowing wow", 0x07) {}
+	NoSlow(std::string cat) : Module(cat, "NoSlow", "You will not slow down when moving", 0x07) {}
 	void* targetAddress;
 	void* targetAddress2;
 	void OnEnable(ClientInstance* a1, Actor* a2) override {

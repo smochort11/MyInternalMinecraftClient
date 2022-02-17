@@ -2,7 +2,7 @@
 
 class Godmode : public Module {
 public:
-	Godmode(std::string cat) : Module(cat, "Godmode", "LocalWorld only Godmode!", 0x07) {}
+	Godmode(std::string cat) : Module(cat, "Godmode", "Become invincible. Singleplayer only.", 0x07) {}
 
 	void OnGameTick(Actor* a1) override {
 		a1->heal(100);

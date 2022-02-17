@@ -3,7 +3,7 @@
 class AlwaysDay : public Module {
 public:
     VirtualFuncHook* func;
-	AlwaysDay(std::string cat) : Module(cat, "AlwaysDay", "Make it constantly day", 0x07) {
+	AlwaysDay(std::string cat) : Module(cat, "AlwaysDay", "It is always day.", 0x07) {
         uintptr_t address = Mem::findSig("44 8B C2 B8 ? ? ? ? F7 EA");
         func = hooks->createHook("timeOfDay", address, timeOfDay);
     

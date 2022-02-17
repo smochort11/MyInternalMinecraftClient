@@ -2,7 +2,7 @@
 
 class Airswim : public Module {
 public:
-	Airswim(std::string cat) : Module(cat, "Airswim", "Swim in the air", 0x07) {};
+	Airswim(std::string cat) : Module(cat, "Airswim", "The air is now water, you can swim in it.", 0x07) {};
 
 	void OnGameTick(Actor* lp) override {
 		lp->IsInWater = true;

@@ -3,7 +3,7 @@
 class BlockReach : public Module {
 public:
     VirtualFuncHook* func;
-    BlockReach(std::string cat) : Module(cat, "BlockReach", "Lets you reach for blocks furthur away", 0x07) {
+    BlockReach(std::string cat) : Module(cat, "BlockReach", "You can reach blocks from a longer distance", 0x07) {
         uintptr_t address = Mem::findSig("48 83 EC 28 45 84 C0 74 1E");
         func = hooks->createHook("getPickRange", address, getPickRange);
 

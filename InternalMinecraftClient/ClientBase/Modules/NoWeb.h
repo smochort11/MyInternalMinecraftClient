@@ -5,7 +5,7 @@
 
 class NoWeb : public Module {
 public:
-	NoWeb(std::string cat) : Module(cat, "NoWeb", "Removes the move slowdown while inside webs.", 0x0) {};
+	NoWeb(std::string cat) : Module(cat, "NoWeb", "No cobweb slowdown", 0x0) {};
 
 	void OnGameTick(Actor* lp) override {
 		lp->resetBlockMovementSlowdownMultiplier();

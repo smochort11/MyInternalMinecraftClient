@@ -2,7 +2,7 @@
 
 class FixHitboxCommand : public Command {
 public:
-	FixHitboxCommand(std::string name) : Command(name, "Reset's your hitbox") {};
+	FixHitboxCommand(std::string name) : Command(name, "Resets hitbox") {};
 
 	void Execute(std::vector<std::string> args) override {
 		auto lp = clientInst->getCPlayer();

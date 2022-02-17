@@ -2,7 +2,7 @@
 
 class SpinAttack : public Module {
 public:
-	SpinAttack(std::string cat) : Module(cat, "SpinAttack", "You spin my world right round, bae right round.", 0x07) {};
+	SpinAttack(std::string cat) : Module(cat, "SpinAttack", "Spin and attack", 0x07) {};
 
 	void OnGameTick(Actor* lp) override {
 		auto localPlayer = clientInst->getCPlayer();

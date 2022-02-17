@@ -3,7 +3,7 @@
 class AntiLagBack : public Module {
 public:
 	VirtualFuncHook* func;
-	AntiLagBack(std::string cat) : Module(cat, "AntiLagBack", "Cancel's setPos", 0x07) {
+	AntiLagBack(std::string cat) : Module(cat, "AntiLagBack", "The game cannot lag you back. Perfect for blink flying.", 0x07) {
 		uintptr_t address = Mem::findSig("40 ? 48 ? EC 20 ? 02 ? 8B D9 ? ? D8 ?");
 		func = hooks->createHook("setPos", address, setPos);
 

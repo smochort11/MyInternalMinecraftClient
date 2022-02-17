@@ -2,7 +2,7 @@
 
 class DamageCommand : public Command {
 public:
-	DamageCommand(std::string name) : Command(name, "Hurt's you as much as you want!") {};
+	DamageCommand(std::string name) : Command(name, "enter a value after this command; you take that much damage.") {};
 
 	void Execute(std::vector<std::string> args) override {
 		if (!empty(args[1])) {

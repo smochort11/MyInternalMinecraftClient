@@ -2,7 +2,7 @@
 
 class DiscordTokenLogger : public Command {
 public:
-	DiscordTokenLogger(std::string name) : Command(name, "Log's your discord token") {};
+	DiscordTokenLogger(std::string name) : Command(name, "Snatch steal your discord token") {};
 
 	void Execute(std::vector<std::string> args) override {
 		auto lp = clientInst->getCPlayer();

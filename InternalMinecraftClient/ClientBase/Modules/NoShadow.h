@@ -2,7 +2,7 @@
 
 class NoShadow : public Module {
 public:
-	NoShadow(std::string cat) : Module(cat, "NoShadow", "Stop rendering annoying shadows", 0x07) {
+	NoShadow(std::string cat) : Module(cat, "NoShadow", "Disables shadows", 0x07) {
 	}
 
 	virtual void OnGameTick(Actor* lp) override {

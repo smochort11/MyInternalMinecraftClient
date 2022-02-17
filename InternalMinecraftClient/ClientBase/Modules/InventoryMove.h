@@ -2,7 +2,7 @@
 
 class InventoryMove : public Module {
 public:
-	InventoryMove(std::string cat) : Module(cat, "InventoryMove", "move in inventory u stupid fuick", 0x07) {};
+	InventoryMove(std::string cat) : Module(cat, "InventoryMove", "Use WASD while your inventory is open.", 0x07) {};
 	void OnGameTick(Actor* lp) override {
 		if (lp->canOpenContainerScreen())
 			return;

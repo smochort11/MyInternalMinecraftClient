@@ -2,7 +2,7 @@
 
 class ChestDumper : public Module {
 public:
-	ChestDumper(std::string cat) : Module(cat, "ChestDumper", "Dumps inventory into a chest", 0x07) {};
+	ChestDumper(std::string cat) : Module(cat, "ChestDumper", "Puts everything in your inventory into a chest.", 0x07) {};
 
 	void OnContainerTick(ContainerManagement* a1, Actor* lp) {
 		for (int i = 0; i < 56; i++){

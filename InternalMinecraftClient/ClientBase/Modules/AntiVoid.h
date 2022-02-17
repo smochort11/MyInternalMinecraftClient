@@ -2,7 +2,7 @@
 
 class AntiVoid : public Module {
 public:
-	AntiVoid(std::string cat) : Module(cat, "AntiVoid", "Attempts to stop you from falling into the void or off cliffs", 0x07) {};
+	AntiVoid(std::string cat) : Module(cat, "AntiVoid", "You cannot fall more than X blocks, or the client will TP you back.", 0x07) {};
 	Vector3 savedPos;
 
 	void OnGameTick(Actor* lp) override {

@@ -2,7 +2,7 @@
 
 class Reach : public Module {
 public:
-    Reach(std::string cat) : Module(cat, "Reach", "Long hand be like", 0x07) {}
+    Reach(std::string cat) : Module(cat, "Reach", "Extends your reach", 0x07) {}
     void* targetAddress;
 
     void OnEnable(ClientInstance* a1, Actor* a2) override {
