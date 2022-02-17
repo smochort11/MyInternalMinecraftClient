@@ -1,5 +1,6 @@
-# InternalMinecraftClient
-<p align="center">
- <h2 align="center">Trero Internal Utility</h2>
- <p align="center">Internal C++ Utiliy Mod for Minecraft (Bedrock Edition) (Currently supports 1.17.40 - 1.18.1, multiversion)</p>
+# MyInternalMinecraftClient
+## A fork of InternalMinecraftClient
+This fork of IMCC edits what the tooltips say as well as command syntax. If I ever learn C++ I might actually work on this client. We'll see
 
+# Compiling
+I'm nit sure how you compile this. I tried. IMCC's Github page had no instuctions, or releases for that matter, and the Information Superhighway was useless.
